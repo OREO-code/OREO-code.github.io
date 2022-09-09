@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-08T15:59:02.841Z</updated>
+  <updated>2022-09-09T15:22:41.876Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>微机原理9.7随笔</title>
+    <link href="http://example.com/posts/14f3ec3e.html"/>
+    <id>http://example.com/posts/14f3ec3e.html</id>
+    <published>2022-09-09T23:21:05.000Z</published>
+    <updated>2022-09-09T15:22:41.876Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="微机原理"><a href="#微机原理" class="headerlink" title="微机原理"></a>微机原理</h1><p>1.内存容量指实际容量</p><p>内存空间可称为寻址范围，是指微机的寻址能力</p><p>内存容量小于等于内存空间</p><p>2.CPU和外设无法直接连接，必须通过IO接口进行信息传递</p><p>接口可分为</p><p>串行和并行 or 输入和输出</p><p>（输出指的是CPU向IO口放松数据，输入反之）</p><p>3.接口功能（外设种类很多，因此接口承担缓冲）</p><p>提供外设电压电流</p><p>匹配信号电平、速度、信号类型、数据格式等</p><p>缓存发给外设的数据（跟速度有关）、控制命令和外设提供的运行状态信息（提高效率）</p><p>中断控制</p><p>4.总线</p><p>数据总线DB</p><p>地址总线AB</p><p>控制总线CB</p><p>5.ASCII使用7位二进制码</p><p>压缩BCD吗用4位二进制码表示十进制数</p><p>扩展则是用8位</p><p>BCD与二进制码是先转换成10进制再转换成2进制</p><p>6.无符号数</p><p>若运算结果超出2的n次方减一，则产生一处，如果没有特殊说明，一律按照8位计算</p><p>产生溢出：</p><p>当最高位对更高位有进位时产生一处</p><p>兑除法运算，当除数过小时会产生溢出</p><p>对乘法运算，无溢出问题</p><p>7.有符号数</p><p>机器数&#x3D;符号位+数值部分</p><p>0为正，1为负</p><p>原码&#x3D;符号位+|数|</p><p>原码中0的表示不唯一</p><p>+0&#x3D;00000000</p><p>-0&#x3D;10000000</p><p>反码</p><p>当x&gt;0 x反&#x3D;x原</p><p>当x&lt;0 保留符号位不变，数值按位取反</p><p>反码中0同样不唯一</p><p>补码</p><p>在微机中，有符号数都一定用补码表示，运算结果也用补码表示</p><p>特殊数10000000</p><p>在原码中定义为-0</p><p>在反码中定义为-127</p><p>在补码中定义为-128</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;微机原理&quot;&gt;&lt;a href=&quot;#微机原理&quot; class=&quot;headerlink&quot; title=&quot;微机原理&quot;&gt;&lt;/a&gt;微机原理&lt;/h1&gt;&lt;p&gt;1.内存容量指实际容量&lt;/p&gt;
+&lt;p&gt;内存空间可称为寻址范围，是指微机的寻址能力&lt;/p&gt;
+&lt;p&gt;内存容量小于等于内存空间&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/posts/4a17b156.html"/>
     <id>http://example.com/posts/4a17b156.html</id>
-    <published>2022-09-08T15:59:02.841Z</published>
-    <updated>2022-09-08T15:59:02.841Z</updated>
+    <published>2022-09-09T15:22:41.876Z</published>
+    <updated>2022-09-09T15:22:41.876Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
